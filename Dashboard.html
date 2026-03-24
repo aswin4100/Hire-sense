@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireSense Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">HireSense</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">My Applications</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- DASHBOARD -->
+    <main class="dashboard">
+
+        <h2 class="section-title">Job Opportunities</h2>
+
+        <div class="job-list">
+
+            <!-- JOB CARD 1 -->
+            <div class="job-card">
+                <h3>Frontend Developer Intern</h3>
+                <p>Company: Google</p>
+                <p>Location: Hyderabad</p>
+                <span class="badge new">New</span>
+                <button onclick="applyJob(this)">Apply</button>
+            </div>
+
+            <!-- JOB CARD 2 -->
+            <div class="job-card">
+                <h3>Backend Developer Intern</h3>
+                <p>Company: Amazon</p>
+                <p>Location: Bangalore</p>
+                <span class="badge new">New</span>
+                <button onclick="applyJob(this)">Apply</button>
+            </div>
+
+            <!-- JOB CARD 3 -->
+            <div class="job-card">
+                <h3>Full Stack Developer</h3>
+                <p>Company: Microsoft</p>
+                <p>Location: Remote</p>
+                <span class="badge new">New</span>
+                <button onclick="applyJob(this)">Apply</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

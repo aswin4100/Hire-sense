@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard - HireSense</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">HireSense</h1>
+            <ul class="nav-links">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Post Job</a></li>
+                <li><a href="#">Applicants</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="dashboard">
+
+        <!-- POST JOB SECTION -->
+        <section class="post-job">
+            <h2>Post a Job</h2>
+
+            <input type="text" id="jobTitle" placeholder="Job Title">
+            <input type="text" id="company" placeholder="Company Name">
+            <input type="text" id="location" placeholder="Location">
+
+            <button onclick="postJob()">Post Job</button>
+        </section>
+
+        <!-- JOB LIST -->
+        <section>
+            <h2 class="section-title">Posted Jobs</h2>
+            <div class="job-list" id="jobList"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
